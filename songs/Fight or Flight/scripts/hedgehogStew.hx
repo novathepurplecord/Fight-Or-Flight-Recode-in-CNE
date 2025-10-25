@@ -24,23 +24,17 @@ function create() {
     black = new FlxSprite(0, 0).makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
     black.camera = camHUD;
 
-    startCircle = new FlxSprite().loadGraphic(Paths.image('circle/circle'));
+    startCircle = new FlxSprite(900, 0).loadGraphic(Paths.image('circle/circle'));
     startCircle.camera = camHUD;
-    startCircle.x += 900;
 
-	startText = new FlxSprite().loadGraphic(Paths.image('circle/text'));
+	startText = new FlxSprite(-1200, 0).loadGraphic(Paths.image('circle/text'));
     startText.camera = camHUD;
-    startText.x -= 1200;
 
     // FEAR MECHANIC
-    fearBarImage = new FlxSprite().loadGraphic(Paths.image('fearBar'));
-    fearBarImage.x = FlxG.width - 100;
-    fearBarImage.y = 100;
+    fearBarImage = new FlxSprite(FlxG.width - 100, 100).loadGraphic(Paths.image('fearBar'));
     fearBarImage.camera = camHUD;
 
-    fearBarBG = new FlxSprite().loadGraphic(Paths.image('fearbarBG'));
-    fearBarBG.x = fearBarImage.x + 20;
-    fearBarBG.y = fearBarImage.y;
+    fearBarBG = new FlxSprite(fearBarImage.x + 20, fearBarImage.y).loadGraphic(Paths.image('fearbarBG'));
     fearBarBG.camera = camHUD;
 
     fearBar = new FlxBar(fearBarImage.x + 50, fearBarImage.y + 23, FlxBarFillDirection.BOTTOM_TO_TOP, 20, 250, barData, "fear", 0, 1);
@@ -63,12 +57,12 @@ function postCreate() {
     camera.follow();
 
     // START CIRCLE ANIMATION
-    new FlxTimer().start(0.6, function(tmr:FlxTimer) {
+    new FlxTimer().start(0.6, function(_) {
 		FlxTween.tween(startCircle, {x: 0}, 0.5);
 		FlxTween.tween(startText, {x: 0}, 0.5);
 	});
 
-	new FlxTimer().start(1.9, function(tmr:FlxTimer) {
+	new FlxTimer().start(1.9, function(_) {
 		FlxTween.tween(startCircle, {alpha: 0}, 1);
 		FlxTween.tween(startText, {alpha: 0}, 1);
 		FlxTween.tween(black, {alpha: 0}, 1);
@@ -83,26 +77,24 @@ function postCreate() {
 //              \/
 var tailsPerspective:Bool = true;
 
-function onEvent(e:EventGameEvent) {
-    var event = e.event;
+function onEvent(_:EventGameEvent) {
+    var event = _.event;
     if (event.name != "Camera Movement") return;
     
     if (event.params[0] == 0) { // Tails
-        trace("Tails Perspective");
         defaultCamZoom = 1.1;
         targetBoyfriendY = 500;
-        // if (curStep >= 1472 && curStep <= 1728) targetCameraY = -150;
-        // else targetCameraY = -100;
-        targetCameraY = -100;
+        if (curStep >= 1472 && curStep <= 1728) targetCameraY = -150;
+        else targetCameraY = -100;
+        //targetCameraY = -100;
     } else { // Starved
-        trace("Starved Perspective");
         defaultCamZoom = 0.85;
         targetBoyfriendY = 270;
         targetCameraY = -50;
     }
 }
 
-function update(elapsed:Float) {
+function update() {
     var zoom = FlxG.camera.zoom;
     if(tailsPerspective) boyfriend.scale.set(zoom * 1.2, zoom * 1.2);
 
@@ -128,7 +120,7 @@ function update(elapsed:Float) {
     barData.fear = CoolUtil.bound(barData.fear, 0.0, 1.0);
 }
 
-function postUpdate(elapsed:Float) {
+function postUpdate() {
     missesTxt.text = "Sacrifices: " + misses;
 }
 
@@ -180,6 +172,7 @@ function stepHit(curStep:Int) {
             updateLerp(0.01);
             tailsPerspective = false;
             defaultCamZoom = 0.65;
+            camera.fade(FlxColor.BLACK, 5);
     }
 }
 

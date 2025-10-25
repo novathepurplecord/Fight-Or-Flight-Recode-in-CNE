@@ -1,0 +1,9 @@
+{
+	"params": [
+		{
+			"name": "Enable Trail?",
+			"type": "Bool",
+			"defaultValue": true
+	  	}
+	]
+}

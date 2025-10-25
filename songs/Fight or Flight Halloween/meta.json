@@ -1,0 +1,15 @@
+{
+	"customValues": {},
+	"color": "#950000",
+	"opponentModeAllowed": false,
+	"difficulties": [
+		"normal"
+	],
+	"icon": "Starved",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Fight or Flight Mix",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 120
+}

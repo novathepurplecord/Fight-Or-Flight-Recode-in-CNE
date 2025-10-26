@@ -1,27 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="scream2.png">
-	<!-- Created with Adobe Animate version 22.0.5.191 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="BurnedSonic0000" x="0" y="0" width="342" height="277" frameX="-61" frameY="-38" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0001" x="342" y="0" width="350" height="289" frameX="-57" frameY="-29" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0002" x="692" y="0" width="366" height="312" frameX="-51" frameY="-29" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0003" x="1058" y="0" width="377" height="325" frameX="-43" frameY="-1" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0004" x="1435" y="0" width="381" height="354" frameX="-32" frameY="-12" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0005" x="0" y="354" width="385" height="360" frameX="-29" frameY="-12" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0006" x="385" y="354" width="409" height="397" frameX="-4" frameY="-16" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0007" x="794" y="354" width="411" height="399" frameX="-3" frameY="-19" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0008" x="1205" y="354" width="415" height="415" frameX="-1" frameY="-4" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0009" x="1620" y="354" width="414" height="415" frameX="0" frameY="-8" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0010" x="0" y="769" width="418" height="413" frameX="0" frameY="0" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0011" x="418" y="769" width="416" height="414" frameX="0" frameY="-3" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0012" x="834" y="769" width="416" height="409" frameX="0" frameY="-4" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0013" x="1250" y="769" width="412" height="399" frameX="-2" frameY="-8" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0014" x="0" y="1183" width="414" height="406" frameX="-1" frameY="-6" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0015" x="414" y="1183" width="409" height="388" frameX="-11" frameY="-26" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0016" x="823" y="1183" width="411" height="397" frameX="-10" frameY="-22" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0017" x="1234" y="1183" width="362" height="304" frameX="-45" frameY="-34" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0018" x="1596" y="1183" width="364" height="312" frameX="-43" frameY="-32" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0019" x="0" y="1589" width="344" height="284" frameX="-61" frameY="-31" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0020" x="344" y="1589" width="347" height="286" frameX="-58" frameY="-31" frameWidth="421" frameHeight="423"/>
-	<SubTexture name="BurnedSonic0021" x="691" y="1589" width="344" height="283" frameX="-61" frameY="-31" frameWidth="421" frameHeight="423"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Tex-Packer-EX v0.6.8 https://strawberrysage.github.io/tex-packer-ex
+-->
+<TextureAtlas imagePath="texture.png" width="1907" height="1018">
+  <SubTexture name="BurnedSonic0000.png" x="3" y="3" width="258" height="324" rotated="true"  frameX="-73" frameY="-44" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0001.png" x="270" y="663" width="260" height="323" rotated="true"  frameX="-73" frameY="-42" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0002.png" x="3" y="663" width="261" height="323" rotated="true"  frameX="-70" frameY="-41" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0003.png" x="532" y="3" width="261" height="320" rotated="true"  frameX="-71" frameY="-41" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0004.png" x="534" y="329" width="256" height="319" rotated="true"  frameX="-58" frameY="-45" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0005.png" x="536" y="654" width="257" height="316" rotated="true"  frameX="-59" frameY="-44" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0006.png" x="1056" y="648" width="250" height="297" rotated="true"  frameX="-52" frameY="-50" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0007.png" x="799" y="648" width="251" height="297" rotated="true"  frameX="-51" frameY="-49" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0008.png" x="1060" y="319" width="246" height="295" rotated="true"  frameX="-50" frameY="-52" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0009.png" x="1064" y="3" width="246" height="293" rotated="true"  frameX="-51" frameY="-52" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0010.png" x="1316" y="3"  width="291" height="245" frameX="-54" frameY="-53" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0011.png" x="1312" y="763"  width="288" height="245" frameX="-56" frameY="-53" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0012.png" x="1613" y="3"  width="291" height="245" frameX="-54" frameY="-53" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0013.png" x="1612" y="302"  width="290" height="246" frameX="-56" frameY="-52" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0014.png" x="1312" y="511"  width="289" height="246" frameX="-56" frameY="-52" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0015.png" x="1316" y="254"  width="290" height="251" frameX="-66" frameY="-49" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0016.png" x="1606" y="763"  width="287" height="252" frameX="-68" frameY="-48" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0017.png" x="796" y="329" width="258" height="313" rotated="true"  frameX="-71" frameY="-44" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0018.png" x="799" y="3" width="259" height="310" rotated="true"  frameX="-72" frameY="-43" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0019.png" x="267" y="3" width="259" height="322" rotated="true"  frameX="-74" frameY="-43" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0020.png" x="267" y="331" width="261" height="321" rotated="true"  frameX="-74" frameY="-41" frameWidth="421" frameHeight="423"/>
+  <SubTexture name="BurnedSonic0021.png" x="3" y="333" width="258" height="324" rotated="true"  frameX="-73" frameY="-44" frameWidth="421" frameHeight="423"/>
 </TextureAtlas>

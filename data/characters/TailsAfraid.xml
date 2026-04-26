@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character x="-65" flipX="true" isPlayer="true" icon="tails" color="#FF9D00">
+	<anim name="idle" anim="idle" x="1" y="1" loop="true"/>
+	<anim name="singDOWN" anim="singDOWN0" x="-6" y="-48"/>
+	<anim name="singRIGHT" anim="singRIGHT0" x="-49" y="-44"/>
+	<anim name="singLEFT" anim="singLEFT0" x="25" y="-1"/>
+	<anim name="singUP" anim="singUP0" x="-10" y="15"/>
+	<anim name="singUPmiss" anim="singUPmiss" x="-52" y="7" loop="true"/>
+	<anim name="singDOWNmiss" anim="singDOWNmiss" x="-57" y="-58" loop="true"/>
+	<anim name="singLEFTmiss" anim="singLEFTmiss" x="-19" y="-7" loop="true"/>
+	<anim name="singRIGHTmiss" anim="singRIGHTmiss" x="-86" y="-60" loop="true"/>
+</character>

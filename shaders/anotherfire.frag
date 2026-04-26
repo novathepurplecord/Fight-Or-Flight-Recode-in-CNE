@@ -72,9 +72,5 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
 void main() {
     vec2 flipped = vec2(openfl_TextureCoordv.x, 1.0 - openfl_TextureCoordv.y);
-
-    vec2 shifted = flipped * openfl_TextureSize;
-    shifted.y -= 300.0;
-
-    mainImage(gl_FragColor, shifted);
+    mainImage(gl_FragColor, flipped * vec2(openfl_TextureSize.x, openfl_TextureSize.y * 0.8));
 }

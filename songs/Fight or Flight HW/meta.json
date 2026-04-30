@@ -1,11 +1,11 @@
 {
 	"customValues": {},
-	"color": "#950000",
+	"color": "#FF9D00",
 	"opponentModeAllowed": false,
 	"difficulties": [
 		"normal"
 	],
-	"icon": "Starved",
+	"icon": "Tails",
 	"coopAllowed": false,
 	"stepsPerBeat": 4,
 	"displayName": "Fight or Flight HW",

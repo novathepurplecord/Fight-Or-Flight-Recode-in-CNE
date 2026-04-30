@@ -1,7 +1,7 @@
 import flixel.ui.FlxBar;
 import flixel.ui.FlxBarFillDirection;
 
-// hi im nova i made this ok bye
+// hi im nova i made this ok bye x2
 
 var barData = {fear: 0.0};
 var cameraMoveStrength:Int = 10;
@@ -54,6 +54,7 @@ function postCreate() {
     // sonic exe 2.5 flashbacks
     tailsBrave.origin.x = tailsBrave.width - 200; 
     tailsAfraid.origin.x = tailsAfraid.width - 200;
+    // perspective effect
     for (tail in [tailsBrave, tailsAfraid, tailsDetermined]) tail.origin.y = tail.x - tail.width;
 }
 
@@ -69,7 +70,7 @@ function onEvent(_) {
 }
 
 function update() {
-    // perspective effect
+    // perspective effect x2
     if (tailsPerspective) for (tail in [tailsBrave, tailsAfraid, tailsDetermined]) tail.scale.set(FlxG.camera.zoom * 1.1, FlxG.camera.zoom * 1.1);
 
     if (barData.fear >= 1.0) health = -10;
@@ -79,7 +80,7 @@ function update() {
 function postUpdate() {
     missesTxt.text = "Sacrifices: " + misses;
     heatShader.iTime = Conductor.songPosition * 0.001;
-    if (curStep >= 1728 && curStep <= 2016) vignetteShader.intensity = Math.abs(FlxMath.fastSin(Conductor.curBeatFloat * Math.PI * 0.25));
+    if (curStep >= 1856 && curStep <= 2144) vignetteShader.intensity = Math.abs(FlxMath.fastSin(Conductor.curBeatFloat * Math.PI * 0.25));
 
     var posY = (curCameraTarget == 0) ? 260 : 320; // starved : tails
     camFollow.setPosition(900, posY);
@@ -98,53 +99,52 @@ function updateLerp(updatedLerpValue:Float) {
     trace("camlerp: " + camGame.followLerp, "zoomlerp: " + camGameZoomLerp);
 }
 
+
 // camera intense things
 function stepHit(_:Int) {
     switch (_) {
-        case 3:
-            //eh uh ieh eh eh uh eeh
+        case 10:
             FlxTween.tween(camera, {zoom: 0.85}, 2, {ease: FlxEase.quadOut, onComplete: () -> defaultCamZoom = camera.zoom});
-        case 128:
-            //eh oo uh eh eh uh ee uu-eh
+        case 256:
             starvedCalm.visible = !(starved.visible = true);
             updateLerp(0.04);
             camZoomingStrength = 1; // Flags.DEFAULT_CAM_ZOOM_STRENGTH doesn't work for some reason
             cameraMoveStrength = 15;
-        case 384:
+        case 512:
             tailsBrave.visible = !(tailsAfraid.visible = true);
             updateLerp(0.05);
-        case 640:
+        case 768:
             starved.visible = !(starvedAngry.visible = true);
+            updateLerp(0.06);
+            cameraMoveStrength = 18;
+        case 1024:
             updateLerp(0.065);
             cameraMoveStrength = 20;
-        case 896:
-            updateLerp(0.05);
-            cameraMoveStrength = 15;
-        case 1152:
+        case 1280:
             updateLerp(0.01);
             tailsPerspective = false;
             defaultCamZoom = 0.65;
-        case 1184:
+        case 1312:
             tailsAfraid.visible = !(tailsDetermined.visible = true);
             camGame.addShader(heatShader);
             updateLerp(0.065);
             cameraMoveStrength = 20;
             tailsPerspective = true;
-        case 1720:
+        case 1856:
             camGame.addShader(vignetteShader);
             vignetteShader.intensity = 0;
-        case 2000:
+        case 2128:
             updateLerp(0.05);
             defaultCamZoom = 1.15;
-        case 2008:
+        case 2136:
             updateLerp(0.04);
             cameraMoveStrength = 15;
             defaultCamZoom = 1.25;
-        case 2016:
+        case 2144:
             camGame.removeShader(vignetteShader);
             updateLerp(0.03);
             defaultCamZoom = 1;
-        case 2144:
+        case 2272:
             updateLerp(0.01);
             tailsPerspective = false;
             defaultCamZoom = 0.65;
@@ -154,7 +154,7 @@ function stepHit(_:Int) {
 
 // better sustains and fearbar
 function onNoteHit(e) {
-    barData.fear = CoolUtil.bound(barData.fear + ((e.character == dad) ? 0.0026 : -0.0026), 0.0, 1.0);
+    if (!e.note.isSustainNote) barData.fear = CoolUtil.bound(barData.fear + ((e.character == dad) ? 0.0029 : -0.0025), 0.0, 1.0);
     if (e.note.isSustainNote) {
         e.animCancelled = true;
         // this thing looks weird on other sprites rather then these

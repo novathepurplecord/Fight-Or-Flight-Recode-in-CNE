@@ -29,19 +29,19 @@ function stepHit(_:Int) {
                 case 1728:
                     black.alpha = fire.alpha = fireHud.alpha = 0;
             }
-        case "Fight or Flight halloween":
+        case "Fight or Flight HW":
             switch (_) {
                 case 1312:
-                    enableShader = true;
                     fire.alpha = sonic.alpha = 1;
-                    bg.alpha = 0;
+                    fire.shader = fireShader;
+                    black.alpha = 0.9;
+                    bg.kill();
                 case 1600:
+                    fireHud.shader = fireShaderHud;
                     fireHud.alpha = 0.2;
-                    enableShaderHud = true;
-                case 1728:
-                    enableShaderHud = false;
-                    enableShader = false;
-                    fire.alpha = fireHud.alpha = 0;
+                    black.alpha = 1;
+                case 1856:
+                    black.alpha = fire.alpha = fireHud.alpha = 0;
             }
     }
 }

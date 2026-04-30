@@ -2,7 +2,7 @@
 <stage folder="stages/fightorflight/" name="Starved" startCamPosX="900" startCamPosY="-2000">
 	<sprite sprite="furnace-open" name="bgOpen"/>
 	<sprite sprite="background" name="bg"/>
-	<sprite sprite="sonic" name="sonic" x="290" y="120" alpha="0"/>
+	<sprite sprite="sonic" name="sonic" x="290" y="123" alpha="0"/>
 		<anim name="BurnedSonic" anim="BurnedSonic" loop="true"/>
 	<sprite/>
 	<sprite sprite="chainsBack" name="chainsBack"/>

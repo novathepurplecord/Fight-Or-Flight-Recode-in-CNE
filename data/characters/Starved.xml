@@ -5,5 +5,5 @@
 	<anim name="singRIGHT" anim="right" x="-35" y="-80"/>
 	<anim name="singLEFT" anim="left" x="279" y="-50"/>
 	<anim name="singUP" anim="up" x="9" y="115"/>
-	<anim name="idle-loop" anim="idle" x="-2" y="6" loop="true" indices="0..3"/>
+	<anim name="idle-loop" anim="idle" x="-2" y="6" loop="true"/>
 </character>

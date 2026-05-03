@@ -1,4 +1,4 @@
-# Fight or Flight recoded in CNE
+# I FORGOT TO UPDATE README LOL 💔💔 Fight or Flight recoded in CNE
 Video Showcase: https://www.youtube.com/watch?v=3zVkCrm9Eq0  
 
 ## Features (idk why lol lmao)
